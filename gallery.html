@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>メディアギャラリー</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    h1 {
+      text-align: center;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+    .item {
+      background: #fff;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+    .item img,
+    .item video {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+    }
+    .item a {
+      text-decoration: none;
+      color: #007acc;
+    }
+    .media-block {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>メディアギャラリー</h1>
+  <div class="gallery">
+    <!-- day001: 画像 -->
+    <div class="item">
+      <h2>day001</h2>
+      <div class="media-block">
+        <img src="docs/day001.jpg" alt="day001">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day002: 画像 -->
+    <div class="item">
+      <h2>day002</h2>
+      <div class="media-block">
+        <img src="docs/day002.png" alt="day002">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day003: 画像 -->
+    <div class="item">
+      <h2>day003</h2>
+      <div class="media-block">
+        <img src="docs/day003.png" alt="day003">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day004: 画像 -->
+    <div class="item">
+      <h2>day004</h2>
+      <div class="media-block">
+        <img src="docs/day004.png" alt="day004">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day005: 動画＋Markdownリンク -->
+    <div class="item">
+      <h2>day005</h2>
+      <div class="media-block">
+        <video controls>
+          <source src="docs/day005.mp4" type="video/mp4">
+          <source src="docs/day005.webm" type="video/webm">
+          お使いのブラウザは動画タグをサポートしていません。
+        </video>
+      </div>
+      <p><a href="docs/day005.md" target="_blank">day005.md の詳細はこちら</a></p>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day006: 画像 -->
+    <div class="item">
+      <h2>day006</h2>
+      <div class="media-block">
+        <img src="docs/day006.png" alt="day006">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day007: 動画＋Markdownリンク -->
+    <div class="item">
+      <h2>day007</h2>
+      <div class="media-block">
+        <video controls>
+          <source src="docs/day007.webm" type="video/webm">
+          お使いのブラウザは動画タグをサポートしていません。
+        </video>
+      </div>
+      <p><a href="docs/day007.md" target="_blank">day007.md の詳細はこちら</a></p>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day008: 動画＋Markdownリンク -->
+    <div class="item">
+      <h2>day008</h2>
+      <div class="media-block">
+        <video controls>
+          <source src="docs/day008.mp4" type="video/mp4">
+          お使いのブラウザは動画タグをサポートしていません。
+        </video>
+      </div>
+      <p><a href="docs/day008.md" target="_blank">day008.md の詳細はこちら</a></p>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day009: 画像 -->
+    <div class="item">
+      <h2>day009</h2>
+      <div class="media-block">
+        <img src="docs/day009.png" alt="day009">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day010: 画像 -->
+    <div class="item">
+      <h2>day010</h2>
+      <div class="media-block">
+        <img src="docs/day010.png" alt="day010">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day011: 画像 -->
+    <div class="item">
+      <h2>day011</h2>
+      <div class="media-block">
+        <img src="docs/day011.png" alt="day011">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day012: 画像 -->
+    <div class="item">
+      <h2>day012</h2>
+      <div class="media-block">
+        <img src="docs/day012.png" alt="day012">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day013: 画像 -->
+    <div class="item">
+      <h2>day013</h2>
+      <div class="media-block">
+        <img src="docs/day013.png" alt="day013">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day014: 画像 -->
+    <div class="item">
+      <h2>day014</h2>
+      <div class="media-block">
+        <img src="docs/day014.png" alt="day014">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day015: 画像 -->
+    <div class="item">
+      <h2>day015</h2>
+      <div class="media-block">
+        <img src="docs/day015.png" alt="day015">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+    <!-- day016: 画像 (ファイル名：day016_install2.jpg) -->
+    <div class="item">
+      <h2>day016</h2>
+      <div class="media-block">
+        <img src="docs/day016_install2.jpg" alt="day016_install2">
+      </div>
+      <p>ここに感想や所感を記入</p>
+    </div>
+    
+  </div>
+</body>
+</html>
